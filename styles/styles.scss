@@ -1,0 +1,20 @@
+// sass styles/styles.scss styles/styles.css --watch
+
+@import
+  'normalize',
+  'fonts',
+  'mixins',
+  'media',
+  'variables',
+  'utils',
+  'globals';
+
+@import 
+  'blocks/button.scss',
+  'blocks/header-navigation',
+  'blocks/header.scss',
+  'blocks/section.scss',
+  'blocks/products.scss',
+  'blocks/services.scss',
+  'blocks/about.scss',
+  'blocks/team.scss';
