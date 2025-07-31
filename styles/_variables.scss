@@ -1,0 +1,36 @@
+:root {
+  --color-dark: #000000;
+  --color-dark-alt: #101828;
+  --color-light: #FFFFFF;
+  --color-footer-light: #CECECE;
+  --color-grey: rgba(255, 255, 255, 0.80);
+  --color-grey-alt: rgba(0, 0, 0, 0.7);
+  --color-grey-fifty: rgba(16, 24, 40, 0.50);
+  --color-button: #243961;
+  --color-grey-500: #667085;
+
+  --border: 1px solid var(--color-button);
+  --border-container: 0.2px solid #000;
+  --border-radius: 8px;
+  --border-radius-average: 12px;
+  --border-radius-large: 50px;
+
+  --font-family-base: 'FormativeTrial' sans-serif;
+
+  --container-width: 1376px;
+  --container-padding-x: 80px;
+
+  --section-padding-y: 70px;
+
+  --input-height: 24px;
+
+  --transition-duration: 0.2s;
+
+  // @include desktop {
+  //   --section-padding-y: 50px;
+  // }
+
+  // @include mobile {
+  //   --section-padding-y: 30px;
+  // }
+}

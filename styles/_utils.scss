@@ -1,0 +1,22 @@
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.hidden-mobile {
+  display: block; 
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  display: none; 
+  @include mobile {
+    display: block !important; 
+  }
+}

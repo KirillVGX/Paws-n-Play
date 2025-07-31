@@ -1,0 +1,45 @@
+.footer {
+    &__tag-inner {
+        display: flex;
+        flex-direction: row;
+        column-gap: 32px;
+        max-width: 832px;
+        width: 100%;
+    }
+
+    &__tag-container {
+        display: flex;
+        flex-direction: column;
+        column-gap: 16px;
+        max-width: 141px;
+        width: 100%;
+        max-height: 168px;
+        height: 100%;
+    }
+
+    &__tag-title {
+        color: var(--color-light);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 143%;
+        max-width: 141px;
+        width: 100%;
+    }
+
+    &__tag-list {
+        display: flex;
+        flex-direction: column;
+        column-gap: 12px;
+    }
+
+    &__tag {
+        color: var(--color-footer-light);
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+        max-width: 141px;
+        width: 100%;
+    }
+}

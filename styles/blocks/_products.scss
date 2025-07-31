@@ -1,0 +1,92 @@
+.products {
+    display: flex;
+    flex-direction: column;
+    max-width: 1158px;
+    width: 100%;
+    row-gap: 40px;
+    padding: 40px 21px;
+
+    @include flex-center();
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1158px;
+        width: 100%;
+        align-items: center;
+    }
+
+    &__title {
+        max-width: 300px;
+        width: 100%;
+        max-height: 35px;
+        height: 100%;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    &__search {
+        display: flex;
+        max-width: 281px;
+        width: 100%;
+        padding: 13px 181px 13px 11px;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: var(--border-radius-large);
+
+        &::placeholder {
+            color: rgba(16, 24, 40, 0.38);
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+        }
+    }
+
+    &__buttons {
+        max-width: 1158px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        @include flex-center();
+    }
+
+    &__button {
+        display: flex;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: none;
+        border: none;
+        color: hsla(0, 0%, 0%, 0.7);
+        display: inline-flex;
+        align-items: center;
+        height: 48px;
+    }
+
+    &__random-button {
+        padding: 15px 25px;
+        border-radius: 8px;
+        border: 1px solid #243961;
+        background: linear-gradient(87deg, #101828 0.18%, #233250 99.39%);
+        box-shadow: 5px 4px 10.9px 0 rgba(0, 0, 0, 0.10);
+        color: var(--color-light);
+    }
+
+    &__cards {
+        display: flex;
+        column-gap: 17px;
+    }
+
+    &__more {
+        font-weight: 600;
+        align-self: end;
+        max-width: 141px;
+        width: 100%;
+        color: var(--color-dark-alt);
+    }
+}

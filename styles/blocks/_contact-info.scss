@@ -1,0 +1,50 @@
+.contact {
+    &__information-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 32px;
+        row-gap: 48px;
+        max-width: 576px;
+        width: 100%;
+    }
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: start;
+        max-width: 272px;
+        width: 100%;
+        height: 100%;
+        flex-shrink: 1;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        max-width: 272px;
+        width: 100%;
+    }
+
+    &__platform {
+        color: var(--color-light);
+        font-weight: 600;
+        line-height: 150%;
+        max-width: 272px;
+        width: 100%;
+    }
+
+    &__motivation {
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 272px;
+        width: 100%;
+    }
+
+    &__info {
+        color: var(--color-light);
+        font-size: 16px;
+        line-height: 100%;
+    }
+}
