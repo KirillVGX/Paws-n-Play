@@ -12,10 +12,10 @@
 
 <body>
   <header class="header">
-    <div class="header__background">
-      <img src="images/header-bg.png" class="header__bg hidden-mobile" alt="">
-      <img src="images/header-bg-mobile.png" class="header__bg-mobile visible-mobile" alt="">
-    </div>
+    <picture>
+      <source media="(max-width: 768px)" srcset="images/header-bg-mobile.png" />
+      <img class="header__bg" src="images/header-bg.png" alt="..." />
+    </picture>
     <div class="header__inner container">
       <div class="header__inner__logo" href="/">
         <img class="header__inner__logo__image" src="./images/icons/logo.svg" alt="Paws n’ Play" width="32" height="32"
@@ -46,7 +46,6 @@
       </button>
       <button class="header__burger-button burger-button visible-mobile" type="button"
         onclick="mobileOverlay.showModal()">
-        <span class="visually-hidden">Open navigation menu</span>
       </button>
     </div>
     <div class="header__body">
