@@ -6,7 +6,6 @@
     max-width: 1536px;
     width: 100%;
     position: relative;
-    height: 100vh;
     overflow: hidden;
 
     &__bg {
@@ -14,16 +13,17 @@
         top: 10%;
         left: 17%;
         transform: scale(154%);
-        max-width: 1536px;
         width: 100%;
         object-fit: contain;
         z-index: -1;
+        filter: brightness(80%) contrast(90%) saturate(90%);
 
         @include mobile {
             max-width: 767px;
             transform: scale(1);
             top: 0%;
             left: 0%;
+            filter: brightness(60%) contrast(90%) saturate(90%);
         }
     }
 
@@ -62,6 +62,18 @@
             max-width: 440px;
         }
 
+        @include tablet {
+            margin: 31px 30px 32px 80px;
+        }
+
+        @include mobile {
+            max-width: 80vw;
+            margin: 0;
+            margin-top: 112px;
+            align-self: center;
+            row-gap: 50px;
+        }
+
         &__text {
             display: flex;
             flex-direction: column;
@@ -73,22 +85,19 @@
         }
 
         &__main-text {
-            font-size: 60px;
             font-weight: 400;
             letter-spacing: 1.2px;
 
-            @include desktop {
-                font-size: 34px;
+            @include mobile {
+                font-weight: 600;
             }
         }
 
         &__description {
-            font-size: 16px;
             font-weight: 600;
             line-height: 150%;
 
             @include desktop {
-                font-size: 10px;
                 font-weight: 400;
             }
         }
@@ -103,7 +112,7 @@
             background: rgba(105, 65, 198, 0.00);
 
             @include desktop {
-                max-width: 117px;
+                max-width: 147px;
                 column-gap: 7px;
                 padding: 10px 17px;
             }
@@ -116,14 +125,18 @@
             &__link-label {
                 color: var(--color-light);
                 font-family: var(--font-family-base);
-                font-size: 18px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 155%;
 
+                @include fluid-text(18, 16);
+
                 @include desktop {
-                    font-size: 11px;
                     font-weight: 500;
+                }
+
+                @include mobile-s {
+                    order: -1;
                 }
             }
         }

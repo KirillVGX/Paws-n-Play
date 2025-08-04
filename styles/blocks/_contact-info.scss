@@ -6,6 +6,10 @@
         row-gap: 48px;
         max-width: 576px;
         width: 100%;
+
+        @include mobile {
+            order: -1;
+        }
     }
 
     &__information {

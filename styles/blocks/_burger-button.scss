@@ -1,0 +1,13 @@
+.burger-button {
+    transition: background-color 0.3s ease;
+    border-radius: var(--border-radius);
+    color: white;
+    position: relative;
+    
+    @include reset-button;
+    @include square(48px);
+    @include hover {
+        background-color: rgba(255, 255, 255, 0.15); 
+        backdrop-filter: blur(2px); 
+    }
+}

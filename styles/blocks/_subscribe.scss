@@ -1,8 +1,18 @@
 .subscribe {
     display: flex;
     flex-direction: row;
-    column-gap: 32px;
+    gap: 100px;
     justify-content: center;
+
+    @include desktop {
+        padding-inline: 32px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
 
     &__motivation {
         display: flex;
@@ -10,6 +20,10 @@
         row-gap: 8px;
         max-width: 773px;
         width: 100%;
+
+        @include mobile {
+            max-width: 350px;
+        }
     }
 
     &__join {
@@ -27,8 +41,14 @@
     &__data {
         display: flex;
         flex-direction: row;
-        column-gap: 16px;
+        gap: 16px;
         align-items: center;
+
+        @include mobile {
+            flex-direction: column;
+            max-width: 350px;
+            width: 100%;
+        }
     }
 
     &__input {
@@ -49,6 +69,11 @@
             font-weight: 400;
             line-height: 150%;
         }
+
+        @include mobile {
+            max-width: 350px;
+            width: 100%;
+        }
     }
 
     &__button {
@@ -67,5 +92,10 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 150%;
+
+        @include mobile {
+            max-width: 350px;
+            width: 100%;
+        }
     }
 }

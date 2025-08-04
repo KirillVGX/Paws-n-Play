@@ -7,6 +7,13 @@
   @include visually-hidden;
 }
 
+.hidden-desktop {
+  display: block; 
+  @include desktop {
+    display: none !important;
+  }
+}
+
 .hidden-mobile {
   display: block; 
   @include mobile {

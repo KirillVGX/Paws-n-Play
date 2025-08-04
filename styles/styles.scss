@@ -1,26 +1,26 @@
 // sass styles/styles.scss styles/styles.css --watch
 
-@import
-  'normalize',
-  'fonts',
-  'mixins',
-  'media',
-  'variables',
-  'utils',
-  'globals';
+@import 'normalize',
+'fonts',
+'mixins',
+'media',
+'variables',
+'utils',
+'globals';
 
 @import 
-  'blocks/button.scss',
-  'blocks/header-navigation',
-  'blocks/header.scss',
-  'blocks/section.scss',
-  'blocks/products.scss',
-  'blocks/services.scss',
-  'blocks/about.scss',
-  'blocks/team.scss',
-  'blocks/blog.scss',
-  'blocks/contact.scss',
-  'blocks/contact-info.scss',
-  'blocks/subscribe.scss',
-  'blocks/footer.scss',
-  'blocks/tags.scss';
+'blocks/button.scss',
+'blocks/burger-button.scss',
+'blocks/header-navigation.scss',
+'blocks/header.scss',
+'blocks/section.scss',
+'blocks/products.scss',
+'blocks/services.scss',
+'blocks/about.scss',
+'blocks/team.scss',
+'blocks/blog.scss',
+'blocks/contact.scss',
+'blocks/contact-info.scss',
+'blocks/subscribe.scss',
+'blocks/footer.scss',
+'blocks/tags.scss';
