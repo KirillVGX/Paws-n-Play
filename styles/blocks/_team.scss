@@ -10,6 +10,7 @@
         grid-template-columns: repeat(2, 1fr);
         padding-inline: 0px;
         gap: 6px;
+        justify-items: center;
     }
 
     &__container {

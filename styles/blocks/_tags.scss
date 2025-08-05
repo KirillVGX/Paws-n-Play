@@ -9,6 +9,11 @@
         @include mobile {
             grid-template-columns: repeat(2, 1fr);
             gap: 30px 45px;
+            justify-items: center;
+        }
+
+        @include mobile-s {
+            justify-items: start;
         }
     }
 
@@ -20,16 +25,34 @@
         width: 100%;
         max-height: 168px;
         height: 100%;
+
+        @include mobile {
+            width: fit-content;
+            min-width: 79px;
+        }
+
+        @include mobile-s {
+            min-width: none;
+        }
     }
 
     &__tag-title {
         color: var(--color-light);
         font-family: Inter;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 700;
         line-height: 143%;
         max-width: 141px;
         width: 100%;
+
+        @include mobile {
+            width: fit-content;
+            min-width: 79px;
+        }
+
+        @include mobile-s {
+            min-width: none;
+        }
     }
 
     &__tag-list {
@@ -43,8 +66,16 @@
         font-family: Inter;
         font-style: normal;
         font-weight: 600;
-        line-height: 150%;
+        line-height: 170%;
         max-width: 141px;
         width: 100%;
+        cursor: pointer;
+        width: fit-content;
+        min-width: 79px;
+
+
+        @include mobile-s {
+            min-width: none;
+        }
     }
 }

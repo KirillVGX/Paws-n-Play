@@ -1,7 +1,7 @@
 .content {
     display: flex;
     flex-direction: column;
-    max-width: 1521px;
+    max-width: 1536px;
     width: 100%;
 }
 
@@ -10,7 +10,7 @@
     flex-direction: column;
     row-gap: 40px;
     padding: 70px 80px;
-    max-width: 1521px;
+    max-width: 1536px;
     width: 100%;
 
     @include mobile {
@@ -72,6 +72,10 @@
     max-width: 202px;
     width: 100%;
     font-weight: 500;
+}
+
+.title-text-bigger {
+    text-wrap: nowrap;
 }
 
 .section-container {
