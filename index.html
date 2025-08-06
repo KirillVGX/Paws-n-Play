@@ -103,24 +103,225 @@
             <input type="text" class="products__search hidden-mobile" placeholder="Search">
           </div>
           <div class="products__buttons">
-            <button class="products__button products__random-button button button--dark">Random</button>
-            <button class="products__button button button--transparent">Cat</button>
-            <button class="products__button button button--transparent">Dogs</button>
-            <button class="products__button button button--transparent">Fish</button>
-            <button class="products__button button button--transparent">Birds</button>
+            <button class="products__button products__random-button button button--dark" data-filter="random">Random</button>
+            <button class="products__button button button--transparent" data-filter="cat">Cat</button>
+            <button class="products__button button button--transparent" data-filter="dog">Dogs</button>
+            <button class="products__button button button--transparent" data-filter="fish">Fish</button>
+            <button class="products__button button button--transparent" data-filter="bird">Birds</button>
           </div>
           <div class="products__cards">
             <div class="products__card">
-              <img src="images/products/1.png" alt="">
+              <img class="products__image" src="images/products/1.png" alt="">
+              <div class="products-hover">
+                <div class="products-hover__header">
+                  <h4 class="products-hover__title-text">
+                    ₦15,000.00
+                  </h4>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 6.87497C9.375 1.03247 2.5 5.34372 2.5 11.4225C2.5 17.5 7.525 20.7387 11.2025 23.6387C12.5 24.6612 13.75 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path opacity="0.5"
+                      d="M15 6.87497C20.625 1.03247 27.5 5.34372 27.5 11.4225C27.5 17.5012 22.475 20.74 18.7975 23.64C17.5 24.6612 16.25 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="products-hover__body">
+                  <h3 class="products-hover__name">
+                    Multivitamin For Cat
+                  </h3>
+                  <p class="products-hover__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Vitae donec pellentesque ut eget tempor egestas diam.
+                  </p>
+                </div>
+                <div class="products-hover__buttons">
+                  <button class="products-hover__button products-hover__counter button button--dark ">
+                    <h4 class="products-hover__button__text">-</h4>
+                    <h4 class="products-hover__button__text">1</h4>
+                    <h4 class="products-hover__button__text">+</h4>
+                  </button>
+                  <button class="products-hover__button button button--dark">Add to card</button>
+                </div>
+              </div>
             </div>
             <div class="products__card">
-              <img src="images/products/2.png" alt="">
+              <img class="products__image" src="images/products/2.png" alt="">
+              <div class="products-hover">
+                <div class="products-hover__header">
+                  <h4 class="products-hover__title-text">
+                    ₦15,000.00
+                  </h4>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 6.87497C9.375 1.03247 2.5 5.34372 2.5 11.4225C2.5 17.5 7.525 20.7387 11.2025 23.6387C12.5 24.6612 13.75 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path opacity="0.5"
+                      d="M15 6.87497C20.625 1.03247 27.5 5.34372 27.5 11.4225C27.5 17.5012 22.475 20.74 18.7975 23.64C17.5 24.6612 16.25 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="products-hover__body">
+                  <h3 class="products-hover__name">
+                    Cat Food
+                  </h3>
+                  <p class="products-hover__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Vitae donec pellentesque ut eget tempor egestas diam.
+                  </p>
+                </div>
+                <div class="products-hover__buttons">
+                  <button class="products-hover__button products-hover__counter button button--dark ">
+                    <h4 class="products-hover__button__text">-</h4>
+                    <h4 class="products-hover__button__text">1</h4>
+                    <h4 class="products-hover__button__text">+</h4>
+                  </button>
+                  <button class="products-hover__button button button--dark">Add to card</button>
+                </div>
+              </div>
             </div>
             <div class="products__card hidden-mobile">
-              <img src="images/products/3.png" alt="">
+              <img class="products__image" src="images/products/3.png" alt="">
+              <div class="products-hover">
+                <div class="products-hover__header">
+                  <h4 class="products-hover__title-text">
+                    ₦15,000.00
+                  </h4>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 6.87497C9.375 1.03247 2.5 5.34372 2.5 11.4225C2.5 17.5 7.525 20.7387 11.2025 23.6387C12.5 24.6612 13.75 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path opacity="0.5"
+                      d="M15 6.87497C20.625 1.03247 27.5 5.34372 27.5 11.4225C27.5 17.5012 22.475 20.74 18.7975 23.64C17.5 24.6612 16.25 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="products-hover__body">
+                  <h3 class="products-hover__name">
+                    Dog Food
+                  </h3>
+                  <p class="products-hover__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Vitae donec pellentesque ut eget tempor egestas diam.
+                  </p>
+                </div>
+                <div class="products-hover__buttons">
+                  <button class="products-hover__button products-hover__counter button button--dark ">
+                    <h4 class="products-hover__button__text">-</h4>
+                    <h4 class="products-hover__button__text">1</h4>
+                    <h4 class="products-hover__button__text">+</h4>
+                  </button>
+                  <button class="products-hover__button button button--dark">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <div class="products__card visually-hidden">
+              <img class="products__image" src="images/products/4.png" alt="">
+              <div class="products-hover">
+                <div class="products-hover__header">
+                  <h4 class="products-hover__title-text">
+                    ₦15,000.00
+                  </h4>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 6.87497C9.375 1.03247 2.5 5.34372 2.5 11.4225C2.5 17.5 7.525 20.7387 11.2025 23.6387C12.5 24.6612 13.75 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path opacity="0.5"
+                      d="M15 6.87497C20.625 1.03247 27.5 5.34372 27.5 11.4225C27.5 17.5012 22.475 20.74 18.7975 23.64C17.5 24.6612 16.25 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="products-hover__body">
+                  <h3 class="products-hover__name">
+                    Pet Plate
+                  </h3>
+                  <p class="products-hover__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Vitae donec pellentesque ut eget tempor egestas diam.
+                  </p>
+                </div>
+                <div class="products-hover__buttons">
+                  <button class="products-hover__button products-hover__counter button button--dark ">
+                    <h4 class="products-hover__button__text">-</h4>
+                    <h4 class="products-hover__button__text">1</h4>
+                    <h4 class="products-hover__button__text">+</h4>
+                  </button>
+                  <button class="products-hover__button button button--dark">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <div class="products__card visually-hidden">
+              <img class="products__image" src="images/products/5.png" alt="">
+              <div class="products-hover">
+                <div class="products-hover__header">
+                  <h4 class="products-hover__title-text">
+                    ₦15,000.00
+                  </h4>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 6.87497C9.375 1.03247 2.5 5.34372 2.5 11.4225C2.5 17.5 7.525 20.7387 11.2025 23.6387C12.5 24.6612 13.75 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path opacity="0.5"
+                      d="M15 6.87497C20.625 1.03247 27.5 5.34372 27.5 11.4225C27.5 17.5012 22.475 20.74 18.7975 23.64C17.5 24.6612 16.25 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="products-hover__body">
+                  <h3 class="products-hover__name">
+                    Bird Water
+                  </h3>
+                  <p class="products-hover__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Vitae donec pellentesque ut eget tempor egestas diam.
+                  </p>
+                </div>
+                <div class="products-hover__buttons">
+                  <button class="products-hover__button products-hover__counter button button--dark ">
+                    <h4 class="products-hover__button__text">-</h4>
+                    <h4 class="products-hover__button__text">1</h4>
+                    <h4 class="products-hover__button__text">+</h4>
+                  </button>
+                  <button class="products-hover__button button button--dark">Add to card</button>
+                </div>
+              </div>
+            </div>
+            <div class="products__card visually-hidden">
+              <img class="products__image" src="images/products/6.png" alt="">
+              <div class="products-hover">
+                <div class="products-hover__header">
+                  <h4 class="products-hover__title-text">
+                    ₦15,000.00
+                  </h4>
+                  <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15 6.87497C9.375 1.03247 2.5 5.34372 2.5 11.4225C2.5 17.5 7.525 20.7387 11.2025 23.6387C12.5 24.6612 13.75 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                    <path opacity="0.5"
+                      d="M15 6.87497C20.625 1.03247 27.5 5.34372 27.5 11.4225C27.5 17.5012 22.475 20.74 18.7975 23.64C17.5 24.6612 16.25 25.625 15 25.625"
+                      stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div class="products-hover__body">
+                  <h3 class="products-hover__name">
+                    Dog Water
+                  </h3>
+                  <p class="products-hover__description">
+                    Lorem ipsum dolor sit amet consectetur.
+                    Vitae donec pellentesque ut eget tempor egestas diam.
+                  </p>
+                </div>
+                <div class="products-hover__buttons">
+                  <button class="products-hover__button products-hover__counter button button--dark ">
+                    <h4 class="products-hover__button__text">-</h4>
+                    <h4 class="products-hover__button__text">1</h4>
+                    <h4 class="products-hover__button__text">+</h4>
+                  </button>
+                  <button class="products-hover__button button button--dark">Add to card</button>
+                </div>
+              </div>
             </div>
           </div>
-          <h4 class="products__more hidden-mobile">View More >>></h4>
+          <button class="products__more hidden-mobile" id="viewMoreBtn">View More >>></button>
         </div>
       </div>
     </section>
