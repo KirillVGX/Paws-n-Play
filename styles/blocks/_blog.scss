@@ -69,18 +69,4 @@
         max-width: 149px;
         width: 100%;
     }
-
-    &__video {
-        position: relative;
-    }
-
-    &__button-start {
-        @include abs-center();
-
-        background-color: transparent;
-        border: none;
-        color: var(--color-light);
-        flex-shrink: 0;
-        cursor: pointer;
-    }
 }

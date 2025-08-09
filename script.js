@@ -124,4 +124,60 @@ document.addEventListener('DOMContentLoaded', () => {
             isExpanded = false;
         }
     });
+
+    function initVideo() {
+        const allVideoCards = document.querySelectorAll('.blog__video');
+
+        allVideoCards.forEach(videoContainer => {
+            const previewImg = videoContainer.querySelector('.blog__preview-img');
+            const video = videoContainer.querySelector('.blog__preview-video');
+            const playBtn = videoContainer.querySelector('.blog__play-button');
+            const playIcon = videoContainer.querySelector('.blog__play-icon');
+            const pauseIcon = videoContainer.querySelector('.blog__pause-icon');
+
+            playBtn.addEventListener('click', () => {
+                if (video.paused) {
+                    allVideoCards.forEach(vc => {
+                        const otherVideo = vc.querySelector('.blog__preview-video');
+                        const otherImg = vc.querySelector('.blog__preview-img');
+                        const otherPlayIcon = vc.querySelector('.blog__play-icon');
+                        const otherPauseIcon = vc.querySelector('.blog__pause-icon');
+
+                        otherVideo.pause();
+                        otherVideo.currentTime = 0;
+                        otherVideo.style.display = 'none';
+                        otherImg.style.display = 'block';
+                        otherPlayIcon.style.display = 'block';
+                        otherPauseIcon.style.display = 'none';
+                    });
+
+                    previewImg.style.display = 'none';
+                    video.style.display = 'block';
+                    video.currentTime = 0;
+                    video.play();
+
+                    playIcon.style.display = 'none';
+                    pauseIcon.style.display = 'block';
+
+                } else {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.style.display = 'none';
+                    previewImg.style.display = 'block';
+
+                    playIcon.style.display = 'block';
+                    pauseIcon.style.display = 'none';
+                }
+            });
+
+            video.addEventListener('ended', () => {
+                video.style.display = 'none';
+                previewImg.style.display = 'block';
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+            });
+        });
+    }
+
+    initVideo();
 });
