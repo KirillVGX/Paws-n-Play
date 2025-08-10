@@ -73,6 +73,9 @@
         width: fit-content;
         min-width: 79px;
 
+        @include hover {
+            color: var(--color-light);
+        }
 
         @include mobile-s {
             min-width: none;

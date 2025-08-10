@@ -10,11 +10,12 @@
     left: 0;
     padding-block: 47px 37px;
     color: var(--color-light);
-    opacity: 0;
+    display: none;
     transition: opacity 0.3s ease;
     box-sizing: border-box;
     font-family: var(--font-family-base);
     border-radius: var(--border-radius);
+    transition-duration: 0.2s;
 
     &__header {
         display: flex;

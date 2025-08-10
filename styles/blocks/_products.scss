@@ -126,7 +126,7 @@
     }
 
     &__card:hover .products-hover {
-      opacity: 1;
+      display: flex;
     }
 
     &__image {

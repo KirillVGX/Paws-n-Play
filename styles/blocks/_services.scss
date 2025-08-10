@@ -32,6 +32,14 @@
         }
     }
 
+    &__container:hover .services-hover {
+      display: flex;
+    }
+
+    &__container:hover &__title {
+      display: none;
+    }
+
     &__image {
         flex-shrink: 0;
         border-radius: var(--border-radius);
