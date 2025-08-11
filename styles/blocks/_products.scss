@@ -126,7 +126,8 @@
     }
 
     &__card:hover .products-hover {
-      display: flex;
+        opacity: 1;
+        visibility: visible;
     }
 
     &__image {
@@ -145,5 +146,12 @@
         max-width: 141px;
         width: 100%;
         color: var(--color-dark-alt);
+        padding-block: 15px;
+        cursor: pointer;
+        border-radius: var(--border-radius);
+
+        @include hover {
+            background-color: var(--color-footer-light);
+        }
     }
 }

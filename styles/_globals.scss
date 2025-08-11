@@ -54,3 +54,11 @@ h5,
 .h5 {
   @include fluid-text(16, 14);
 }
+
+input {
+  color: var(--color-dark-alt);
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}

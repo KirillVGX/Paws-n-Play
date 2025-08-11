@@ -1,0 +1,50 @@
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-label {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #DEDEDE;
+  border: none;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease;
+}
+
+.dropdown a {
+  display: block;
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  color: var(--color-dark-alt);
+  opacity: 0.7;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.dropdown a {
+  @include hover {
+    background-color: #a39797;
+  }
+}
+
+/* Показываем при наведении */
+.menu {
+  @include hover {
+    .dropdown {
+      display: block;
+      max-height: 500px;
+    }
+  }
+}

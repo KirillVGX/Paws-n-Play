@@ -30,7 +30,9 @@
         display: inline-flex;
         align-items: center;
         height: 48px;
+    }
 
+    &-link-hover {
         @include hover {
             &::after {
                 width: 100%;

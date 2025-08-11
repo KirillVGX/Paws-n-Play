@@ -1,5 +1,4 @@
 .products-hover {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background: rgba(16, 24, 40, 0.54);
@@ -10,13 +9,16 @@
     left: 0;
     padding-block: 47px 37px;
     color: var(--color-light);
-    display: none;
-    transition: opacity 0.3s ease;
     box-sizing: border-box;
     font-family: var(--font-family-base);
     border-radius: var(--border-radius);
-    transition-duration: 0.2s;
 
+
+    display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    
     &__header {
         display: flex;
         flex-direction: row;

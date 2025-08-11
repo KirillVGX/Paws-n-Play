@@ -1,6 +1,10 @@
 .blog {
     &__video {
         position: relative;
+
+        @include tablet {
+            display: none
+        }
     }
 
     &__play-button {

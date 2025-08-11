@@ -67,18 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    //viewmore
-
     const viewMoreButton = document.querySelectorAll('.products__button[data-filter]');
     const viewMoreCards = document.querySelectorAll('.products__card');
     const viewMoreBtn = document.getElementById('viewMoreBtn');
 
-    let isExpanded = false; // флаг состояния кнопки
+    let isExpanded = false;
 
     viewMoreButton.forEach(button => {
         button.addEventListener('click', () => {
             const filter = button.getAttribute('data-filter');
-            isExpanded = false; // сбрасываем состояние
+            isExpanded = false; 
             viewMoreBtn.textContent = 'View More';
 
             viewMoreCards.forEach(card => {
@@ -87,9 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             let selectedCards = [];
 
-            if (filter === 'cat') {
+            if (filter === 'cat' || filter === 'fish') {
                 selectedCards = Array.from(viewMoreCards).slice(0, 3);
-            } else if (filter === 'dog') {
+            } else if (filter === 'dog' || filter === 'bird') {
                 selectedCards = Array.from(viewMoreCards).slice(-3);
             } else if (filter === 'random') {
                 selectedCards = Array.from(viewMoreCards)
@@ -180,4 +178,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initVideo();
-});
+}); 

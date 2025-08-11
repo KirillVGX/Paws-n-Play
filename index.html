@@ -28,20 +28,32 @@
       </div>
       <nav class="header__menu hidden-mobile">
         <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Shop</a>
+          <li class="header__menu-item menu">
+            <label class="header__menu-link menu-label" href="/">Shop</label>
+            <div class="dropdown">
+              <a href="#products">Cat</a>
+              <a href="#products">Dogs</a>
+              <a href="#products">Random</a>
+            </div>
+          </li>
+          <li class="header__menu-item menu">
+            <label class="header__menu-link menu-label" href="/">Services</label>
+            <div class="dropdown">
+              <a href="#services">Grooming</a>
+              <a href="#services">Boarding</a>
+              <a href="#services">Veterinary</a>
+              <a href="#services">Training</a>
+
+            </div>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Services</a>
+            <a class="header__menu-link header__menu-link-hover" href="#about">About us</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">About us</a>
+            <a class="header__menu-link header__menu-link-hover" href="#blog">Blog</a>
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Blog</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Contact</a>
+            <a class="header__menu-link header__menu-link-hover" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -78,7 +90,7 @@
   </header>
 
   <main class="content">
-    <section class="section container">
+    <section class="section container" id="products">
       <div class="title-container">
         <div class="title-container__main">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -326,7 +338,7 @@
         </div>
       </div>
     </section>
-    <section class="section container">
+    <section class="section container" id="services">
       <div class="title-container">
         <div class="title-container__main">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -412,7 +424,7 @@
         </div>
       </div>
     </section>
-    <section class="section container">
+    <section class="section container" id="about">
       <div class="title-container">
         <div class="title-container__main">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -574,7 +586,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-gap container">
+    <section class="section section-gap container" id="blog">
       <div class="title-container">
         <div class="title-container__main">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -643,7 +655,7 @@
         </div>
       </div>
     </section>
-    <section class="section section-gap section-bg container">
+    <section class="section section-gap section-bg container" id="contact">
       <div class="title-container title-container-light">
         <div class="title-container__main">
           <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -682,8 +694,9 @@
               </div>
               <div class="contact__privacy">
                 <input type="checkbox" class="contact__checkbox" name="agreement" required>
-                <p class="contact__checkbox-text">You agree to our friendly <span class="contact__underline">privacy
-                    policy</span>.</p>
+                <p class="contact__checkbox-text">You agree to our friendly <a 
+                  href="https://www.termsfeed.com/live/06d22ab0-a98e-46c7-b3e1-e6560ce05e77" class="contact__underline" target="_blank">privacy
+                    policy</a>.</p>
               </div>
             </div>
 
