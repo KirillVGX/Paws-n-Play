@@ -6,7 +6,7 @@ body {
   line-height: 1;
   color: var(--color-dark);
   background-color: var(--color-light);
-  // height: 100%;
+  scroll-behavior: smooth;
   @include flex-center();
 }
 
